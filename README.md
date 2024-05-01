@@ -1,5 +1,5 @@
 # React Native Build Android Release APK 
-This is a simple python Scr1pt that automate the rename release apk from react native ` yarn build `.
+This is a simple python Scr1pt that automate the rename release apk from react native ` yarn build ` or `npm run build`.
 
 ## How to download
 Following the next steps:
