@@ -1,17 +1,19 @@
-# React Native Build Android Release APK 
-This is a simple python Scr1pt that automate the rename release apk from react native ` yarn build ` or `npm run build`.
+# React Native Builder
+This is a simple python Scr1pt that automate the rename release apk from react native builded packege.
+You can use it to simplify gradlew release and rename packege accordium your preference.
 
-## How to download
+## How to install
 Following the next steps:
+```sh
+wget https://raw.githubusercontent.com/mr0xff/react-native-android-build/refs/heads/main/build_release_name.py
+cp build_release_name.py <path/to/your/project/name>/android/
 ```
-git clone https://github.com/mr0xff/android-build-apk.git
+The next step is to update your `package.json` file as following:
+```json
+{
+  "scripts": {
+    "build": "cd android/ && ./gradlew build  && ./build_release_name.py"
+  }
+}
 ```
-### Copy to your react native project root 
-Like this ` my-app/android `
-
-### C0nf1gur3 your ` package.json ` 
-Like this 
-
-<img src="build_android_app.png" width="650px"> 
-
-*Bye :)*
+That's all see you soon :)
